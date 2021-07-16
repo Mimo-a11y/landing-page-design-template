@@ -1,0 +1,82 @@
+.home-main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+}
+.home-main-section .img-wrapper{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.home-main-section .lady-img{
+    background-image: url('images/landing-page-girl.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+
+}
+.content{
+    margin-left:5em;
+}
+.home-main-section .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    
+}
+
+@media (max-width: 900px){
+    .home-main-section .img-wrapper{
+        display: none;
+    }
+    .home-main-section {
+        justify-content: center;
+    }
+}
+.circle-1{
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    bottom: 5vw;
+    left: 5vw ;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 128, 0.1);
+    z-index: -1;
+}
+.circle-2{
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    top: 15vh;
+    left: 30vw ;
+    border-radius: 50%;
+    background-color: rgba(52, 87, 178, 0.1);
+    z-index: -1;
+}
+.circle-3{
+    position: absolute;
+    overflow: hidden;
+    height: 45vw;
+    width: 45vw;
+    bottom:0;
+    right: 0;
+    z-index: -1;
+}
+.circle-3::before{
+    content: "";
+    transform: translate(40%, 40%);
+    position: absolute;
+    background-color: rgba(52, 87, 178, 0.1);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+
+}
